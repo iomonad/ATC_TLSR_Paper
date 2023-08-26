@@ -72,7 +72,6 @@ _attribute_ram_code_ void EPD_detect_model(void)
     {
         epd_model = 1;
     }
-
     EPD_POWER_OFF();
 }
 
@@ -273,8 +272,11 @@ _attribute_ram_code_ void epd_display(uint32_t time_is, uint16_t battery_mv, int
     }
     else if (epd_model == 4)
     {
-        resolution_w = 212;
-        resolution_h = 104;
+       // resolution_w = 212;
+       // resolution_h = 104;
+    //forçage pour modèle de chez Auchan
+        resolution_w = 250;
+        resolution_h = 128;
     }
     else if (epd_model == 5)
     {// Just as placeholder right now, needs a complete different driving because of RAM limits
@@ -286,7 +288,7 @@ _attribute_ram_code_ void epd_display(uint32_t time_is, uint16_t battery_mv, int
         resolution_w = 250;
         resolution_h = 128; // 122 real pixel, but needed to have a full byte
     }
-
+    
     obdCreateVirtualDisplay(&obd, resolution_w, resolution_h, epd_temp);
     obdFill(&obd, 0, 0); // fill with white
 

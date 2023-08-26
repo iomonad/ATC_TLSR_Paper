@@ -89,13 +89,15 @@ _attribute_ram_code_ uint8_t EPD_BW_213_ice_read_temp(void)
     // Set RAM X- Address Start/End
     EPD_WriteCmd(0x44);
     EPD_WriteData(0x00);
-    EPD_WriteData(0x0C);
+    //EPD_WriteData(0x0C);
+    EPD_WriteData(0x0f); //modif auchan
 
     // Set RAM Y- Address Start/End
     EPD_WriteCmd(0x45);
     EPD_WriteData(0x28);
     EPD_WriteData(0x01);
-    EPD_WriteData(0x54);
+    //EPD_WriteData(0x54); 
+    EPD_WriteData(0x2f); //modif auchan
     EPD_WriteData(0x00);
 
     // Border waveform control
@@ -183,13 +185,15 @@ _attribute_ram_code_ uint8_t EPD_BW_213_ice_Display(unsigned char *image, int si
     // Set RAM X- Address Start/End
     EPD_WriteCmd(0x44);
     EPD_WriteData(0x00);
-    EPD_WriteData(0x0C);
+    //EPD_WriteData(0x0C);
+    EPD_WriteData(0x0f);  //modif auchan
 
     // Set RAM Y- Address Start/End
     EPD_WriteCmd(0x45);
     EPD_WriteData(0x28);
     EPD_WriteData(0x01);
-    EPD_WriteData(0x54);
+    //EPD_WriteData(0x54);
+    EPD_WriteData(0x2e); // modif auchan
     EPD_WriteData(0x00);
 
     // Border waveform control

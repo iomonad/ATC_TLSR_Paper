@@ -3,6 +3,8 @@ Custom BLE firmware for Hanshow E-Paper Shelf Labels / Price Tags using the TLSR
 
 <h1 style="color:red;font-size:25px;">Please note that this firmware ONLY works on Price Tags with the TLSR Microcontroller! Make sure to check the <a href="#compatible-hanshow-models">list of compatible models</a>.</h1>
 
+MOD POUR MODELES DE CHEZ AUCHAN (Stellar-MN@ E31H) mal détectés par le firmware d'origine.
+Le mod ne fonctionne pas pour 100% des ESL de ce modèle. Certaines séries contiennent un autre chipset ou un autre écran.
 
 ### You can support my work via PayPal: https://paypal.me/hoverboard1 this keeps projects like this coming.
 
